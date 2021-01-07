@@ -1,0 +1,43 @@
+.worddisplay {
+  width: 30%;
+}
+
+@keyframes flashtimer {
+  0% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+.timerdisplay {
+  height: 120px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  border-radius: 100px;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+
+  font-size: 60px;
+}
+
+.resultdisplay {
+  height: auto;
+  min-height: 120px;
+}
+
+.btnclass {
+  text-align: right;
+  padding-right: 1px;
+}

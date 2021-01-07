@@ -6,6 +6,7 @@ import Footer from './Components/Footer'
 import HomePage from './ScreenPages/HomePage'
 import ToDoList from './ScreenPages/ToDoList'
 import Contact from './ScreenPages/Contact'
+import WordLearning from './ScreenPages/WordLearning/WordLearning'
 import NotFound from './ScreenPages/NotFound'
 
 const App = () => {
@@ -14,6 +15,12 @@ const App = () => {
       <Header />
       <main className="App py-3">
         <Switch>
+          <Route
+            path="/projects/wordlearning"
+            to
+            component={WordLearning}
+            exact
+          />
           <Route path="/projects/todolist" to component={ToDoList} exact />
           <Route path="/contact" to component={Contact} exact />
           <Route path="/" to component={HomePage} exact />

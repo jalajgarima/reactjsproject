@@ -21,8 +21,8 @@ const Header = () => {
                 <Nav.Link>Contact</Nav.Link>
               </LinkContainer>
               <NavDropdown title="Projects" id="basic-nav-dropdown">
-                <LinkContainer to="/projects/timer">
-                  <NavDropdown.Item>Timer</NavDropdown.Item>
+                <LinkContainer to="/projects/wordlearning">
+                  <NavDropdown.Item>Word Learning</NavDropdown.Item>
                 </LinkContainer>
 
                 <LinkContainer to="/projects/todolist">
@@ -40,12 +40,12 @@ const Header = () => {
               </NavDropdown>
               <LinkContainer to="/login">
                 <Nav.Link>
-                  <i class="fas fa-user"></i>
+                  <i className="fas fa-user"></i>
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/shoppingcart">
                 <Nav.Link>
-                  <i class="fas fa-shopping-cart"></i>
+                  <i className="fas fa-shopping-cart"></i>
                 </Nav.Link>
               </LinkContainer>
             </Nav>
