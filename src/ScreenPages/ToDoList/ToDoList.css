@@ -1,0 +1,31 @@
+.todocontainer {
+  background-color: orange;
+  width: 70%;
+  max-width: 550px;
+  padding: 10px;
+  height: auto;
+}
+
+.inputrow {
+  padding: 10px;
+
+  margin: 10px;
+  background-color: yellowgreen;
+}
+.tododiv {
+  text-align: left;
+  margin: 10px;
+  padding: 10px 0 0 15px;
+  background-color: yellowgreen;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.forh3 {
+  text-decoration: underline;
+}
+
+i {
+  cursor: pointer;
+  padding-right: 15px;
+}
