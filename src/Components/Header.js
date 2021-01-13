@@ -32,10 +32,8 @@ const Header = () => {
                   <NavDropdown.Item>Shopping Cart</NavDropdown.Item>
                 </LinkContainer>
                 <NavDropdown.Divider />
-                <LinkContainer to="/projects/distancecalc">
-                  <NavDropdown.Item href="#action/3.4">
-                    Google Api Distance Calc
-                  </NavDropdown.Item>
+                <LinkContainer to="/projects/drivingdistance">
+                  <NavDropdown.Item>Google Api Distance Calc</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
               <LinkContainer to="/login">

@@ -39,6 +39,7 @@ const WordLearning = () => {
   const onKeyPressEventHendler = (e) => {
     if (e.charCode === 13 && wordInput.trim() !== '') {
       checkAnswer()
+      setWords(Words)
       setWord(words[newRandomNumber])
       setWordInput('')
     }

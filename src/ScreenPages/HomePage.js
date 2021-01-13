@@ -1,14 +1,16 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const HomePage = () => {
   return (
-    <div>
+    <Container>
       <h1>Home</h1>
       <h4>
         Basic Setup: React, React Router, React Bootstrap, React Router
-        Bootstrap, Bootswatch Theme
+        Bootstrap, Bootswatch Theme, Axios, React Places Autocomplete, Google
+        Distance Matrix Api
       </h4>
-    </div>
+    </Container>
   )
 }
 

@@ -1,0 +1,40 @@
+.distancecontainer {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  /* border: 2px solid lightblue; */
+}
+
+.forh3 {
+  text-decoration: underline;
+}
+
+.location-search-input {
+  width: 100%;
+  max-width: 500px;
+  height: 35px;
+  margin: 0px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 2px solid lightblue;
+}
+
+.suggestion-item--active {
+  height: 35px;
+  padding: 5px;
+  text-align: left;
+}
+
+.suggestion-item {
+  height: 35px;
+  padding: 5px;
+  text-align: left;
+}
+
+.spanclass {
+  display: flex;
+  text-align: left;
+  font-size: medium;
+  font-weight: 400;
+  margin-top: 10px;
+}
