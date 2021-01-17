@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import { CartContext } from '../CartContext/CartContext'
 
 const Header = () => {
+  const [cart, setCart] = useContext(CartContext)
   return (
     <header>
       <Navbar bg="primary" expand="lg" variant="dark">
@@ -28,7 +30,7 @@ const Header = () => {
                 <LinkContainer to="/projects/todolist">
                   <NavDropdown.Item>ToDo list</NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/projects/shoppingcart">
+                <LinkContainer to="/projects/paintingstore">
                   <NavDropdown.Item>Shopping Cart</NavDropdown.Item>
                 </LinkContainer>
                 <NavDropdown.Divider />
@@ -43,7 +45,15 @@ const Header = () => {
               </LinkContainer>
               <LinkContainer to="/shoppingcart">
                 <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i>
+                  <i className="fas fa-shopping-cart">
+                    {cart.length === 0 ? (
+                      ''
+                    ) : (
+                      <span style={{ color: 'orange', paddingLeft: '5px' }}>
+                        {cart.length}
+                      </span>
+                    )}
+                  </i>
                 </Nav.Link>
               </LinkContainer>
             </Nav>
